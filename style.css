@@ -130,15 +130,13 @@ html{
     justify-content: center;
     align-items: center;
     padding: 20px;
+    background-color: red;
 }
 
-.sign{
+.sign, .conecte{
     width: 400px;
 }
 
-.conecte{
-    width: 350px;
-}
 
 .descricao{
     text-align: center;
