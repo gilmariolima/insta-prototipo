@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    background-color: #fafafa;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.colunas{
+    height: 100%;
+    display: flex;
+    width: 800px;
+}
+
+
+.lado-esquerdo{
+    flex-grow: 1;
+    width: 50%;
+    background-image: url("images/main-foto.png");
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.lado-direito{
+    flex-grow: 1;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 175px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #a1a1a1;
+    width: 100%;
+    padding-top: 20px;
+    background-color: #fff;
+}
+
+.formulario form{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 15px;
+}
+.formulario input{
+    height: 50px;
+    padding: 10px;
+    width: 80%;
+    border-radius: 4px;
+    color: #000;
+    border: 1px solid #a1a1a1;
+    font-size: 16px;
+}
+
+.formulario input::placeholder{
+    font-size: 15px;
+    color: #000;
+}
+
+#entrar{
+    font-size: 15px;
+    padding: 0;
+    text-align: center;
+    height: 40px;
+    background-color: #0095f6;
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+    margin: 20px 0;
+}
+
+.cadastro, .conecte{
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #a1a1a1;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #fff;
+}
+
+
+
+.cadastro span a, .conecte span a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #0095f6;
+}
+
+.container-sign{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.sign{
+    width: 350px;
+}
+
+.conecte{
+    width: 350px;
+}
+
+.descricao{
+    text-align: center;
+    padding: 10px 40px;
+}
+
+.descricao span{
+    font-weight: bold;
+    color: #4d4d4d;
+}
+
+.facebook{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.facebook button{
+    font-size: 15px;
+    width: 80%;
+    text-align: center;
+    height: 40px;
+    background-color: #0095f6;
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+
+}
+
+.separacao{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.linha{
+    height: 1px;
+    background-color: #a1a1a1;
+    width: 30%;
+}
+
+.tag{
+    margin: 0 5px;
+    color: #4d4d4d;
+    font-weight: bold;
+}
+
+footer{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+}
+
+footer span{
+    text-align: center;
+}
+
+.imgs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.imgs img{
+    width: 135px;
+}
+
+@media (max-width: 805px){
+    .lado-esquerdo{
+        display: none;
+    }
+    .formulario, .cadastro, .conecte{
+        width: 400px;
+        padding: 10px;
+    }
+    .imgs img{
+        width: 100px;
+    }
+}
+
+@media (max-width: 430px){
+    .formulario, .cadastro, .conecte{
+        width: 300px;
+        padding: 10px;
+    }
+}
