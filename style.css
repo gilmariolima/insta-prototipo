@@ -9,6 +9,11 @@ body{
     background-color: #fafafa;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
+    overflow-x: hidden;
+}
+
+html{
+    overflow-x: hidden;
 }
 
 .container{
@@ -128,7 +133,7 @@ body{
 }
 
 .sign{
-    width: 350px;
+    width: 400px;
 }
 
 .conecte{
@@ -214,6 +219,7 @@ footer span{
     .lado-esquerdo{
         display: none;
     }
+
     .formulario, .cadastro, .conecte{
         width: 400px;
         padding: 10px;
